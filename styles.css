@@ -1,6 +1,20 @@
+@font-face {
+    font-family: myForte;
+    src: url("fonts/FORTE.TTF");
+}
+
+:root {
+    --text-nav: 'myForte';
+}
+
 html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #191919;
+}
+
+.font-navbar {
+    font-family: var(--text-nav);
+    font-size: 20px;
 }
