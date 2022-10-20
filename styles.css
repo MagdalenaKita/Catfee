@@ -18,3 +18,19 @@ html {
     font-family: var(--text-nav);
     font-size: 20px;
 }
+
+.image-container {
+    height: 100vh;
+}
+
+.image-style {
+    height: 100%; 
+    -o-object-fit: cover; 
+       object-fit: cover;
+}
+
+@media screen and (max-width: 575px) {
+    .image-container {
+        height: 50vh;
+    }
+}
