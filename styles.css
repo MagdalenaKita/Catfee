@@ -5,6 +5,8 @@
 
 :root {
     --text-nav: 'myForte';
+    --text-content: Helvetica, sans-serif;
+    --font-content: 12px;
 }
 
 html {
@@ -27,6 +29,11 @@ html {
     height: 100%; 
     -o-object-fit: cover; 
        object-fit: cover;
+}
+
+.content-typography {
+    font-family: var(--text-content);
+    font-size: var(--font-content);
 }
 
 @media screen and (max-width: 575px) {
