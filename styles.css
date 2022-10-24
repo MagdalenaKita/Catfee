@@ -9,11 +9,12 @@
     --font-content: 12px;
 }
 
-html {
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #191919;
+    background-color: #101010;
+    font-family: var(--text-content);
 }
 
 .font-navbar {
@@ -34,6 +35,21 @@ html {
 .content-typography {
     font-family: var(--text-content);
     font-size: var(--font-content);
+}
+
+.image-menu {
+    background-image: url("img/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-section {
+    font-family: var(--text-nav);
+    font-size: 48px;
+}
+
+.border-dashed {
+    border-right: 2px dashed white;
 }
 
 @media screen and (max-width: 575px) {
