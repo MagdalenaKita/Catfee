@@ -3,10 +3,15 @@
     src: url("fonts/FORTE.TTF");
 }
 
+@font-face {
+    font-family: myMonotype;
+    src: url("fonts/MTCORSVA.TTF");
+}
+
 :root {
     --text-nav: 'myForte';
-    --text-content: Helvetica, sans-serif;
-    --font-content: 12px;
+    --text-content: 'myMonotype';
+    --font-content: 16px;
 }
 
 html, body {
@@ -37,6 +42,10 @@ html, body {
     font-size: var(--font-content);
 }
 
+.menu-typography {
+    font-size: 22px;
+}
+
 .image-menu {
     background-image: url("img/bg.png");
     background-size: cover;
@@ -50,6 +59,23 @@ html, body {
 
 .border-dashed {
     border-right: 2px dashed white;
+}
+
+.statement {
+    background: url("img/coffee.jpg"); /* <a href='https://www.freepik.com/photos/background'>Background photo created by wirestock - www.freepik.com</a>*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px 10px;
+    margin: 50px 0;
+    max-width: 100vw;
+}
+
+@media screen and (max-width: 767px) {
+    .border-dashed {
+        border: none;
+    }
 }
 
 @media screen and (max-width: 575px) {
